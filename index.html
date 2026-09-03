@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La Ville Hotel, Alderney — Relax in our island hotel</title>
+  <meta name="description" content="La Ville Hotel sits in the heart of Alderney on Victoria Street: 20 spacious en-suite rooms, a bar and restaurant, the Chez Bar and the warmest welcome in the Channel Islands. Book your island escape." />
+  <script>document.documentElement.className += " has-js";</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ ANNOUNCEMENT BAR ============ -->
+  <div class="announce" aria-label="Current offers">
+    <div class="track">
+      <span><b>Summer offer</b> &middot; 5 nights for the price of 4, B&amp;B</span><span class="dot"></span>
+      <span><b>&pound;5 Aperol Spritz</b> on the terrace, all summer</span><span class="dot"></span>
+      <span><b>Alderney hospitality staff</b> &middot; 20% off food &amp; drink, Wed &amp; Thu</span><span class="dot"></span>
+      <span>Reservations <b>+44 1481 824784</b></span><span class="dot"></span>
+      <span><b>Summer offer</b> &middot; 5 nights for the price of 4, B&amp;B</span><span class="dot"></span>
+      <span><b>&pound;5 Aperol Spritz</b> on the terrace, all summer</span><span class="dot"></span>
+      <span><b>Alderney hospitality staff</b> &middot; 20% off food &amp; drink, Wed &amp; Thu</span><span class="dot"></span>
+      <span>Reservations <b>+44 1481 824784</b></span><span class="dot"></span>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header at-top">
+    <div class="wrap-wide nav">
+      <a class="brand" href="index.html" aria-label="La Ville Hotel, Alderney — home">
+        <span>
+          <span class="brand-mark">La Ville</span>
+          <small>Hotel &middot; Alderney</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="restaurant.html">Bar &amp; Restaurant</a>
+        <a href="chez-bar.html">The Chez Bar</a>
+        <a href="food-dude.html">Food Dude</a>
+        <a href="alderney.html">Alderney</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-phone" href="tel:+441481824784" aria-label="Call La Ville Hotel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.97.72 2.9a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.93.35 1.9.59 2.9.72A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          824784
+        </a>
+        <a class="btn btn-book" href="rooms.html#book">Book a room</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-media">
+        <img src="https://lavillehotel.com/wp-content/uploads/2021/11/welcome.jpg" alt="La Ville Hotel on Victoria Street in the heart of Alderney" fetchpriority="high" />
+      </div>
+      <div class="wrap-wide hero-inner">
+        <p class="eyebrow">In the heart of Alderney</p>
+        <h1><span class="word" style="--i:0">Relax</span> <span class="word" style="--i:1">in</span> <span class="word" style="--i:2">our</span><br /><span class="word" style="--i:3"><em>island</em></span> <span class="word" style="--i:4">hotel</span></h1>
+        <p class="hero-sub">Twenty spacious en-suite rooms, fantastic food and the warmest welcome on Victoria Street. Your Alderney escape begins at La Ville.</p>
+        <div class="hero-cta">
+          <a class="btn btn-book btn-lg" href="rooms.html#book">Book your stay</a>
+          <a class="btn btn-ghost on-dark btn-lg" href="rooms.html">Explore the rooms</a>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span class="mouse"></span>Scroll</div>
+    </section>
+
+    <!-- ============ BOOKING BAR ============ -->
+    <div class="booking-wrap">
+      <div class="wrap">
+        <form class="booking-bar reveal" action="rooms.html" method="get">
+          <div class="booking-field">
+            <label for="from">Check in</label>
+            <input type="date" id="from" name="from" />
+          </div>
+          <div class="booking-field">
+            <label for="to">Check out</label>
+            <input type="date" id="to" name="to" />
+          </div>
+          <div class="booking-field">
+            <label for="adults">Guests</label>
+            <select id="adults" name="adults">
+              <option value="1">1 adult</option>
+              <option value="2" selected>2 adults</option>
+              <option value="3">3 adults</option>
+              <option value="4">4 adults</option>
+              <option value="5">5 adults</option>
+              <option value="6">6 adults</option>
+            </select>
+          </div>
+          <div class="booking-field">
+            <label for="children">Children</label>
+            <select id="children" name="children">
+              <option value="0" selected>0 children</option>
+              <option value="1">1 child</option>
+              <option value="2">2 children</option>
+              <option value="3">3 children</option>
+              <option value="4">4 children</option>
+            </select>
+          </div>
+          <button class="btn btn-teal" type="submit" formaction="rooms.html#book">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3" stroke-linecap="round"/></svg>
+            Search rooms
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track" data-marquee="45">
+        <span class="item">Rooms &amp; Suites</span><span class="item o">Bar &amp; Restaurant</span><span class="item">The Chez Bar</span><span class="item o">Food Dude</span><span class="item">Explore Alderney</span>
+        <span class="item">Rooms &amp; Suites</span><span class="item o">Bar &amp; Restaurant</span><span class="item">The Chez Bar</span><span class="item o">Food Dude</span><span class="item">Explore Alderney</span>
+      </div>
+    </div>
+
+    <!-- ============ WELCOME / ABOUT ============ -->
+    <section class="section">
+      <div class="wrap-wide split">
+        <div class="split-media tall reveal-img">
+          <img src="https://lavillehotel.com/wp-content/uploads/2021/11/smallerpics_0001_287675719.jpg" alt="A bright, spacious en-suite room at La Ville Hotel" />
+          <div class="badge-float"><b>20</b><span>spacious en-suite rooms</span></div>
+        </div>
+        <div class="split-body">
+          <p class="eyebrow reveal">Welcome to La Ville</p>
+          <h2 class="reveal d1">The heart of island life, on Victoria Street</h2>
+          <p class="reveal d1">With views of St Anne&rsquo;s Church, one of the finest Victorian buildings in the Channel Islands, and the beautiful cobbled Victoria Street, La Ville is perfectly placed for any Alderney excursion.</p>
+          <p class="reveal d2">Everything here is built around great food, good drinks, comfortable rooms and the best service on the island. Whether you&rsquo;re working on your tan, exploring somewhere new, or simply escaping, La Ville will be the place for you.</p>
+          <div class="pillars reveal d2">
+            <div class="pillar">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11h18M5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M4 11v7m16-7v7M4 18h16" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <h4>Rest well</h4>
+              <p>Spacious en-suite rooms with Nespresso &amp; a cooked breakfast.</p>
+            </div>
+            <div class="pillar">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 8h1a3 3 0 0 1 0 6h-1M6 8h12v6a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5V8ZM6 2v2M10 2v2M14 2v2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <h4>Eat &amp; drink</h4>
+              <p>Local ingredients, a cocktail bar and a sunny terrace.</p>
+            </div>
+            <div class="pillar">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.35-7-10a7 7 0 0 1 14 0c0 5.65-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg></span>
+              <h4>Right here</h4>
+              <p>Beaches, museum and wildlife centre, all a short stroll away.</p>
+            </div>
+          </div>
+          <a class="link-arrow reveal d2" href="alderney.html"><span>Discover Alderney</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section band-sand" style="padding-block: clamp(3rem,5vw,5rem);">
+      <div class="wrap">
+        <div class="stats">
+          <div class="stat reveal"><div class="num" data-count="20">20</div><div class="lab">En-suite rooms</div></div>
+          <div class="stat reveal d1"><div class="num" data-count="195" data-prefix="&pound;">&pound;195</div><div class="lab">Rooms from, B&amp;B</div></div>
+          <div class="stat reveal d2"><div class="num" data-count="2">2</div><div class="lab">Bars &amp; a sun terrace</div></div>
+          <div class="stat reveal d3"><div class="num" data-count="1" data-suffix=" min">1 min</div><div class="lab">Stroll to the beach</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ROOMS ============ -->
+    <section class="section">
+      <div class="wrap-wide">
+        <div class="section-head reveal">
+          <p class="eyebrow">Stay with us</p>
+          <h2>Rooms made for slow island mornings</h2>
+          <p class="lede">Spacious and en-suite, with wardrobes, USB charging, Nespresso machines and a proper cooked breakfast to wake up to. Some look over Victoria Street, others over the Cathedral of the Channel Islands.</p>
+        </div>
+
+        <div class="grid cards-3" style="margin-top:2.8rem;">
+          <article class="card room-card reveal">
+            <div class="card-media"><img src="https://lavillehotel.com/wp-content/uploads/2023/05/LA-VILLE-ALDERNEY_0006_IMG_1560.jpg" alt="Double room at La Ville Hotel" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="room-top"><h3>Double Room</h3><span class="room-price">&pound;195<small>B&amp;B / night</small></span></div>
+              <div class="room-specs">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11h18M5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M4 18v-7m16 7v-7" stroke-linecap="round"/></svg>Sleeps 2</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12.5 12 5l7 7.5M6 11v8h12v-8" stroke-linecap="round" stroke-linejoin="round"/></svg>En-suite</span>
+              </div>
+              <p>A calm, comfortable double with everything you need after a day on the island.</p>
+              <a class="btn btn-ghost" href="rooms.html#book">Check availability</a>
+            </div>
+          </article>
+
+          <article class="card room-card reveal d1">
+            <div class="card-media"><img src="https://lavillehotel.com/wp-content/uploads/2023/05/LA-VILLE-ALDERNEY_0009_IMG_1554.jpg" alt="Kingsize suite with sitting area at La Ville Hotel" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="room-top"><h3>Kingsize Suite</h3><span class="room-price">&pound;195<small>B&amp;B / night</small></span></div>
+              <div class="room-specs">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11h18M5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M4 18v-7m16 7v-7" stroke-linecap="round"/></svg>Sleeps 2</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12.5 12 5l7 7.5M6 11v8h12v-8" stroke-linecap="round" stroke-linejoin="round"/></svg>Suite</span>
+              </div>
+              <p>Our most generous room for two, with space to properly unwind.</p>
+              <a class="btn btn-ghost" href="rooms.html#book">Check availability</a>
+            </div>
+          </article>
+
+          <article class="card room-card reveal d2">
+            <div class="card-media"><img src="https://lavillehotel.com/wp-content/uploads/2021/11/287676480-1.jpg" alt="Family room at La Ville Hotel" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="room-top"><h3>Family Room</h3><span class="room-price">&pound;386<small>B&amp;B / night</small></span></div>
+              <div class="room-specs">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11h18M5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M4 18v-7m16 7v-7" stroke-linecap="round"/></svg>Sleeps 4&ndash;5</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12.5 12 5l7 7.5M6 11v8h12v-8" stroke-linecap="round" stroke-linejoin="round"/></svg>En-suite</span>
+              </div>
+              <p>Room for the whole family, moments from the beaches and the museum.</p>
+              <a class="btn btn-ghost" href="rooms.html#book">Check availability</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="center reveal" style="margin-top:2.8rem;">
+          <a class="btn btn-book btn-lg" href="rooms.html#book">See all rooms &amp; book</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EAT & DRINK ============ -->
+    <section class="section band-sand">
+      <div class="wrap-wide">
+        <div class="section-head reveal">
+          <p class="eyebrow">Eat &amp; drink</p>
+          <h2>Great food by day, the island&rsquo;s liveliest bar by night</h2>
+        </div>
+        <div class="grid cards-2" style="margin-top:2.8rem;">
+          <article class="card reveal">
+            <div class="card-media" style="aspect-ratio:3/2;"><img src="https://lavillehotel.com/wp-content/uploads/2023/05/la-ville-alderney_0001_IMG_1544.jpg" alt="Breakfast and brunch at the La Ville restaurant" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>Bar &amp; Restaurant</h3>
+              <p>Breakfast, brunch and lunch made with the best local ingredients wherever possible, plus a cocktail bar, sunny terrace and a &pound;5 Aperol Spritz with your name on it.</p>
+              <a class="link-arrow" href="restaurant.html" style="margin-top:0.4rem;"><span>See the restaurant</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="card reveal d1">
+            <div class="card-media" style="aspect-ratio:3/2;"><img src="https://lavillehotel.com/wp-content/uploads/2021/11/smallerpics_0003_bar-la-ville.jpg" alt="The Chez Bar, the largest bar on Alderney" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>The Chez Bar</h3>
+              <p>The largest bar on Alderney: live music and DJs, the best rum and gin selection, Sky &amp; TNT Sports on two big screens, and a karaoke night that&rsquo;s an island institution.</p>
+              <a class="link-arrow" href="chez-bar.html" style="margin-top:0.4rem;"><span>Visit the Chez Bar</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPLORE ALDERNEY ============ -->
+    <section class="section band-teal">
+      <div class="wrap-wide split">
+        <div class="split-body">
+          <p class="eyebrow reveal">Explore Alderney</p>
+          <h2 class="reveal d1">Everything worth doing is a short stroll away</h2>
+          <p class="reveal d1">The Wildlife centre, the museum, shops and restaurants are all a few minutes from our front door. Take a bike out to the lighthouse, wander to Gannet Rock, stroll down Braye Road to one of the finest beaches in the Channel Islands, or just perch on a bench with a good book.</p>
+          <div class="room-tags reveal d2" style="margin-top:1.4rem;">
+            <span class="tag tag-dark">Wildlife centre</span>
+            <span class="tag tag-dark">Alderney museum</span>
+            <span class="tag tag-dark">Cobbled Victoria Street</span>
+            <span class="tag tag-dark">Beaches &amp; bays</span>
+            <span class="tag tag-dark">Lighthouse by bike</span>
+            <span class="tag tag-dark">Gannet Rock</span>
+          </div>
+          <a class="btn btn-book reveal d2" href="alderney.html" style="margin-top:1.9rem;">Plan your days on the island</a>
+        </div>
+        <div class="split-media square reveal-img d1">
+          <img src="https://lavillehotel.com/wp-content/uploads/2021/11/La-Ville-Hotel-Resturant-Alderney-Photography-by-Steve-Phelan-5-1024x683.jpg" alt="Alderney coastline, photographed by Stevie Phelan" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head center reveal" style="text-align:center;">
+          <p class="eyebrow center-rule">Guest stories</p>
+          <h2>Kind words from the island</h2>
+          <p style="margin-top:0.9rem;"><span class="placeholder-note">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Sample reviews &mdash; swap for your real Google / TripAdvisor quotes
+          </span></p>
+        </div>
+
+        <div class="testi reveal" data-testi style="margin-top:2.4rem;">
+          <div class="testi-track">
+            <blockquote class="testi-slide">
+              <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg></div>
+              <p class="testi-quote">&ldquo;The warmest welcome on Alderney. Spotless room, a proper cooked breakfast, and the terrace in the evening sun was the highlight of our trip.&rdquo;</p>
+              <div class="testi-meta"><span class="who">Sample guest</span><span class="src">&middot; placeholder review</span></div>
+            </blockquote>
+            <blockquote class="testi-slide">
+              <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg></div>
+              <p class="testi-quote">&ldquo;We came for Alderney Week and the Chez Bar was buzzing every night. Great staff, great music, and our room upstairs was quiet as anything.&rdquo;</p>
+              <div class="testi-meta"><span class="who">Sample guest</span><span class="src">&middot; placeholder review</span></div>
+            </blockquote>
+            <blockquote class="testi-slide">
+              <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2Z"/></svg></div>
+              <p class="testi-quote">&ldquo;Perfectly placed for everything. We walked to the beach, the museum and dinner without ever needing a car. We&rsquo;ll be back next summer.&rdquo;</p>
+              <div class="testi-meta"><span class="who">Sample guest</span><span class="src">&middot; placeholder review</span></div>
+            </blockquote>
+          </div>
+          <div class="testi-nav">
+            <button class="testi-btn" data-testi-prev aria-label="Previous review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="testi-dots" role="tablist" aria-label="Reviews"></div>
+            <button class="testi-btn" data-testi-next aria-label="Next review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section band-sand">
+      <div class="wrap">
+        <div class="section-head center reveal" style="text-align:center;">
+          <p class="eyebrow center-rule">Good to know</p>
+          <h2>Your stay, made simple</h2>
+          <p style="margin-top:0.9rem;"><span class="placeholder-note">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Draft answers &mdash; confirm the real details before launch
+          </span></p>
+        </div>
+
+        <div class="faq reveal" style="margin-top:2.4rem;">
+          <div class="faq-item">
+            <button class="faq-q">What time is check-in and check-out?<span class="plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Check-in is from 15:00 and check-out is by 11:00. Arriving on an earlier flight or ferry? Let us know and we&rsquo;ll happily store your bags so you can start exploring straight away.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Is breakfast included?<span class="plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Yes. All of our rooms are bed &amp; breakfast, with a proper cooked breakfast served daily from 7:30am to 10:00am &mdash; the most important meal of the day before a day of adventuring around Alderney.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">How do we get to Alderney, and to the hotel?<span class="plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Alderney is reached by air (Aurigny and seasonal partners) or by sea. La Ville is right in the centre of St Anne on Victoria Street, a short taxi ride from the airport &mdash; we&rsquo;re happy to help arrange a taxi for your arrival.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Do you have parking and free WiFi?<span class="plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Free WiFi is included throughout. Alderney is a wonderfully walkable island and most guests happily leave the car behind; get in touch and we&rsquo;ll advise on the best parking nearby for your stay.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Can you cater for dietary requirements?<span class="plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Absolutely. Let us know about any allergies or dietary needs when you book and our kitchen will look after you. We use the best locally sourced ingredients wherever possible.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ENQUIRY / FINAL CTA ============ -->
+    <section class="section">
+      <div class="wrap-wide split">
+        <div class="split-body">
+          <p class="eyebrow reveal">Begin your escape</p>
+          <h2 class="reveal d1">Ready when you are</h2>
+          <p class="reveal d1">Book instantly through our live availability, or send us an enquiry for events, larger parties, outside catering or anything else &mdash; we&rsquo;ll reply within 24 hours.</p>
+          <div class="hero-cta reveal d2" style="margin-top:1.6rem;">
+            <a class="btn btn-book btn-lg" href="rooms.html#book">Book your stay</a>
+            <a class="btn btn-ghost btn-lg" href="tel:+441481824784">Call +44 1481 824784</a>
+          </div>
+        </div>
+        <div class="reveal d1">
+          <form class="enquiry" data-enquiry>
+            <div class="field">
+              <label for="e-name">Name</label>
+              <input id="e-name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="e-email">Email</label>
+              <input id="e-email" name="email" type="email" autocomplete="email" required placeholder="you@email.com" />
+            </div>
+            <div class="field">
+              <label for="e-arrive">Arrive</label>
+              <input id="e-arrive" name="arrive" type="date" />
+            </div>
+            <div class="field">
+              <label for="e-guests">Guests</label>
+              <select id="e-guests" name="guests">
+                <option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="e-msg">Message</label>
+              <textarea id="e-msg" name="message" placeholder="Tell us about your stay, event or enquiry"></textarea>
+            </div>
+            <div class="actions">
+              <button class="btn btn-teal" type="submit">Send enquiry</button>
+              <span class="hint">We&rsquo;ll never share your details.</span>
+            </div>
+            <p class="field full hint" data-enquiry-note hidden role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap-wide">
+      <div class="footer-top">
+        <div>
+          <p class="f-brand">La Ville</p>
+          <p style="max-width:34ch;">A warm, family-run hotel, bar and restaurant in the heart of Alderney &mdash; your home on the island.</p>
+          <div class="social">
+            <a href="https://www.instagram.com/laville_hotel/" target="_blank" rel="noopener" aria-label="La Ville on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/lavillehotelalderney" target="_blank" rel="noopener" aria-label="La Ville on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H7v3h2v9h3v-9h2.5l.5-3H12V6.5a1 1 0 0 1 1-1h2V3Z" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <nav class="footer-links" aria-label="Footer">
+            <a href="rooms.html">Rooms &amp; booking</a>
+            <a href="restaurant.html">Bar &amp; Restaurant</a>
+            <a href="chez-bar.html">The Chez Bar</a>
+            <a href="food-dude.html">Food Dude</a>
+            <a href="alderney.html">Alderney</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <p>44 Victoria Street<br />St Anne, Alderney<br />GY9 3TA, Channel Islands</p>
+          <p style="margin-top:0.9rem;">Check in from 15:00<br />Check out by 11:00</p>
+        </div>
+        <div class="footer-cta">
+          <h4>Reservations</h4>
+          <p><a href="tel:+441481824784">+44 1481 824784</a></p>
+          <p><a href="mailto:contactus@lavillehotel.com">contactus@lavillehotel.com</a></p>
+          <a class="btn btn-book" href="rooms.html#book">Book a room</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> La Ville Hotel, Alderney. All rights reserved.</span>
+        <span>Photography by Stevie Phelan &middot; Made with care on the island.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Local tooling / preview
+.claude/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
