@@ -50,7 +50,7 @@ ul { list-style: none; padding: 0; }
   --step-5:  clamp(3.8rem, 2.6rem + 5.4vw, 7.5rem);
 
   --gap: clamp(1rem, 0.8rem + 1vw, 1.6rem);
-  --section: clamp(5rem, 3.4rem + 7.5vw, 11rem);
+  --section: clamp(3rem, 2rem + 3vw, 5.25rem);
   --radius: 16px;
   --radius-lg: 24px;
   --radius-xl: 32px;
