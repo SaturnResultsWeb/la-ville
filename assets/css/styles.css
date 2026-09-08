@@ -77,6 +77,9 @@ body {
   color: var(--ink-2);
   background: var(--ground);
   overflow-x: hidden;
+  font-kerning: normal;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  hanging-punctuation: first allow-end;
 }
 /* smooth scroll only when JS/Lenis not driving it */
 html:not(.lenis) { scroll-behavior: smooth; }
@@ -87,17 +90,29 @@ html.lenis, html.lenis body { height: auto; }
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   color: var(--ink);
-  line-height: 1.02;
+  line-height: 1.04;
   font-weight: 500;
   letter-spacing: -0.005em;
   text-wrap: balance;
+  font-optical-sizing: auto;
 }
-h1 { font-size: var(--step-5); }
-h2 { font-size: var(--step-4); }
+h1 { font-size: var(--step-5); letter-spacing: -0.014em; line-height: 1.0; }
+h2 { font-size: var(--step-4); letter-spacing: -0.01em; }
 h3 { font-size: var(--step-2); }
 p { text-wrap: pretty; }
 strong { color: var(--ink); font-weight: 600; }
 em { font-style: italic; }
+
+/* ---------- Typography refinements (typeset pass) ---------- */
+/* Aligned, non-jittery figures for data/prices/stats (stops count-up reflow) */
+.stat .num, .room-price, .badge-float b, .hours .row span:last-child,
+.booking-field input, .booking-field select { font-variant-numeric: lining-nums tabular-nums; }
+/* Functional subheads read a touch stronger for scanning */
+.card-body h3, .room-card h3 { font-weight: 600; }
+/* Comfortable measure on running copy; looser leading for light-on-dark */
+.split-body p { max-width: 60ch; }
+.band-teal p, .band-teal .lede { line-height: 1.72; }
+.testi-quote { letter-spacing: -0.006em; }
 
 ::selection { background: var(--clay); color: oklch(0.99 0.01 60); }
 :focus-visible { outline: 2.5px solid var(--teal); outline-offset: 3px; border-radius: 4px; }
