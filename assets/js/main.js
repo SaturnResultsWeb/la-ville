@@ -32,16 +32,17 @@
   var header = document.querySelector(".site-header");
   var hero = document.querySelector(".hero, .page-hero");
   if (header) {
-    var solidFrom = hero ? Math.max(60, hero.offsetHeight - 120) : 40;
+    // Solidify as soon as the user scrolls past the header itself, so the
+    // nav never sits transparent over moving content (hard to read).
+    var solidFrom = 48;
     var onScroll = function () {
       var y = window.scrollY;
       header.classList.toggle("solid", y > solidFrom);
-      header.classList.toggle("at-top", hero ? y < solidFrom : false);
+      header.classList.toggle("at-top", hero ? y <= solidFrom : false);
     };
     if (hero) header.classList.add("at-top");
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", function () { solidFrom = hero ? Math.max(60, hero.offsetHeight - 120) : 40; onScroll(); });
   }
 
   /* ---------- Hero image parallax (optional GSAP enhancement) ---------- */

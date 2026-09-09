@@ -55,11 +55,11 @@ ul { list-style: none; padding: 0; }
   /* fluid scale (editorial — display runs large) */
   --step--1: clamp(0.82rem, 0.79rem + 0.14vw, 0.9rem);
   --step-0:  clamp(1rem, 0.96rem + 0.2vw, 1.08rem);
-  --step-1:  clamp(1.15rem, 1.08rem + 0.34vw, 1.32rem);
-  --step-2:  clamp(1.9rem, 1.6rem + 1.3vw, 2.7rem);
-  --step-3:  clamp(2.6rem, 2.1rem + 2.4vw, 4rem);
-  --step-4:  clamp(3.2rem, 2.4rem + 3.6vw, 5.4rem);
-  --step-5:  clamp(3.8rem, 2.6rem + 5.4vw, 7.5rem);
+  --step-1:  clamp(1.05rem, 1rem + 0.24vw, 1.18rem);
+  --step-2:  clamp(1.55rem, 1.35rem + 0.9vw, 2.1rem);
+  --step-3:  clamp(2.2rem, 1.8rem + 2vw, 3.4rem);
+  --step-4:  clamp(2.1rem, 1.7rem + 1.9vw, 3.3rem);
+  --step-5:  clamp(3rem, 2.2rem + 3.8vw, 5.4rem);
 
   --gap: clamp(1rem, 0.8rem + 1vw, 1.6rem);
   --section: clamp(3rem, 2rem + 3vw, 5.25rem);
@@ -199,7 +199,7 @@ em { font-style: italic; }
 
 /* ---------- Header ---------- */
 .site-header { position: sticky; top: 0; z-index: 100; transition: background 0.4s var(--ease), border-color 0.4s var(--ease), box-shadow 0.4s var(--ease); border-bottom: 1px solid transparent; }
-.site-header.at-top { background: transparent; }
+.site-header.at-top { background: oklch(0.993 0.006 84 / 0); }
 .site-header.at-top .nav-links a, .site-header.at-top .brand-mark, .site-header.at-top .brand small, .site-header.at-top .nav-phone { color: oklch(0.98 0.012 85); }
 .site-header.at-top .brand small { color: oklch(0.9 0.03 90); }
 .site-header.at-top .nav-toggle { border-color: oklch(0.98 0.01 85 / 0.5); background: transparent; }
@@ -687,16 +687,17 @@ body.nav-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
   var header = document.querySelector(".site-header");
   var hero = document.querySelector(".hero, .page-hero");
   if (header) {
-    var solidFrom = hero ? Math.max(60, hero.offsetHeight - 120) : 40;
+    // Solidify as soon as the user scrolls past the header itself, so the
+    // nav never sits transparent over moving content (hard to read).
+    var solidFrom = 48;
     var onScroll = function () {
       var y = window.scrollY;
       header.classList.toggle("solid", y > solidFrom);
-      header.classList.toggle("at-top", hero ? y < solidFrom : false);
+      header.classList.toggle("at-top", hero ? y <= solidFrom : false);
     };
     if (hero) header.classList.add("at-top");
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", function () { solidFrom = hero ? Math.max(60, hero.offsetHeight - 120) : 40; onScroll(); });
   }
 
   /* ---------- Hero image parallax (optional GSAP enhancement) ---------- */
