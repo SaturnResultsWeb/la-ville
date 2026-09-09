@@ -438,6 +438,8 @@ body.nav-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
 @media (max-width: 1000px) {
   .nav-links, .nav-phone { display: none; }
   .nav-toggle { display: inline-flex; }
+  .nav-actions { gap: 0.6rem; }
+  .nav-actions .btn-book { padding: 0.6em 1.05em; font-size: 0.85rem; white-space: nowrap; }
   .nav-links.open { display: flex; position: absolute; top: var(--nav-h); left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0.2rem; background: var(--card); border-bottom: 1px solid var(--line); padding: 0.8rem 1.3rem 1.4rem; box-shadow: var(--shadow-md); }
   .site-header.at-top .nav-links.open a { color: var(--ink); }
   .nav-links.open a { padding: 0.9em 1em; border-radius: 12px; font-size: 1rem; }
@@ -452,10 +454,11 @@ body.nav-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
   .contact-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
-  .booking-bar { grid-template-columns: 1fr 1fr; gap: 0.2rem 0.4rem; margin-top: -2.2rem; padding: 1rem; }
-  .booking-field { border-right: 0; border-bottom: 1px solid var(--line-soft); padding: 0.65rem 0.5rem; }
-  .booking-field:nth-child(3), .booking-field:nth-child(4) { border-bottom: 0; }
-  .booking-bar .btn { grid-column: 1 / -1; margin-top: 0.6rem; }
+  .booking-bar { grid-template-columns: 1fr; gap: 0; margin-top: -2.2rem; padding: 0.85rem 1.1rem; }
+  .booking-field { border-right: 0; border-bottom: 1px solid var(--line-soft); padding: 0.75rem 0.2rem; }
+  .booking-field:nth-child(4) { border-bottom: 0; }
+  .booking-field input, .booking-field select { min-width: 0; }
+  .booking-bar .btn { grid-column: 1 / -1; margin-top: 0.7rem; }
   .cards-3, .cards-2 { grid-template-columns: 1fr; }
   .pillars { grid-template-columns: 1fr; gap: 1rem; }
   .enquiry { grid-template-columns: 1fr; }
@@ -467,7 +470,8 @@ body.nav-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
   .gallery { grid-template-columns: 1fr; grid-auto-rows: 240px; }
   .gallery .wide { grid-column: span 1; }
   .footer-top { grid-template-columns: 1fr; }
-  .hero-cta .btn { flex: 1; }
+  .hero-cta { flex-direction: column; align-items: stretch; }
+  .hero-cta .btn { width: 100%; }
 }
 
 /* ---------- Reduced motion ---------- */
